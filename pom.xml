@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>DatabaseAdapter Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -16,7 +21,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>DatabaseAdapter</finalName>
+    <finalName>athena</finalName>
 
     <pluginManagement>
       <plugins>
@@ -29,6 +34,10 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
+
+          <configuration>
+            <release>17</release>  <!--or <release>10</release>-->
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
